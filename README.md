@@ -22,6 +22,9 @@ Projeto que foi o desafio do modulo 02 do curso DDS Back-End na Cubos Academy. O
 - [x] Consultar saldo da conta bancária
 - [X] Emitir extrato bancário
 
+![Rotas](https://github.com/ErickAlvDev/API-Banco-Digital-EA/assets/142065333/d90483a0-21be-446c-a008-d6438c6100b2)
+
+
 ### Estrutura do objeto no arquivo `bancodedados.js`
 
 ```javascript
@@ -93,6 +96,8 @@ npm run dev
         }
     }
 ]
+```
+![Listar](https://github.com/ErickAlvDev/API-Banco-Digital-EA/assets/142065333/82ddfefb-052f-4bdc-a010-c553e9a1e718)
   
 - POST /contas - Criar conta bancária
   #### Exemplo de Requisição
@@ -100,82 +105,77 @@ npm run dev
 ```javascript
 // POST /contas
 {
-    "nome": "Foo Bar 2",
-    "cpf": "00011122234",
-    "data_nascimento": "2021-03-15",
+    "nome": "carlos",
+    "cpf": "7070007566",
+    "data_nascimento": "2021-08-15",
     "telefone": "71999998888",
-    "email": "foo@bar2.com",
-    "senha": "12345"
+    "email": "kq@bar3.com",
+    "senha": "123"
 }
 ```
+![Criar](https://github.com/ErickAlvDev/API-Banco-Digital-EA/assets/142065333/e9b45d5d-ddfb-4f72-8b56-b0cf5d6d187e)
+
 - PUT /contas/:numeroConta/usuario - Atualizar usuário da conta bancária
 #### Exemplo de Requisição
 ```javascript
 // PUT /contas/:numeroConta/usuario
 {
-    "nome": "Foo Bar 3",
-    "cpf": "99911122234",
+    "nome": "luis",
+    "cpf": "757576575",
     "data_nascimento": "2021-03-15",
     "telefone": "71999998888",
-    "email": "foo@bar3.com",
+    "email": "luuoo@bar2.com",
     "senha": "12345"
-{
+}
 ```
+![Atualizar](https://github.com/ErickAlvDev/API-Banco-Digital-EA/assets/142065333/bf324ef2-802f-4547-b286-01af45ee2f85)
 
 - DELETE /contas/:numeroConta - Excluir uma Conta Bancaria
+![Excluir](https://github.com/ErickAlvDev/API-Banco-Digital-EA/assets/142065333/aa387135-2b9d-4a15-b846-cc136c456f76)
 
 - POST /transacoes/depositar - Depositar em uma Conta Bancaria
 #### Exemplo de Requisição
 ```javascript
 // POST /transacoes/depositar
 {
-	"numero_conta": "1",
-	"valor": 1900
+	"numero_conta": "2",
+	"valor": 5000
 }
 ```
+![Depositar](https://github.com/ErickAlvDev/API-Banco-Digital-EA/assets/142065333/302f35d2-d26a-4394-93d0-2ac17d4e24ab)
 
 -  POST /transacoes/sacar - Sacar de uma conta bancária
 #### Exemplo de Requisição
 ```javascript
 // POST /transacoes/sacar
 {
-	"numero_conta": "1",
-	"valor": 1900,
-    "senha": "123456"
+	"numero_conta": "2",
+	"valor": 500,
+	"senha": "12345"
 }
 ```
+![Sacar](https://github.com/ErickAlvDev/API-Banco-Digital-EA/assets/142065333/6b50e875-69b3-4f86-80dd-2a24108dbfc6)
 
 -  POST /transacoes/transferir - Transferir valores entre contas bancárias
 #### Exemplo de Requisição
 ```javascript
 // POST /transacoes/transferir
 {
-	"numero_conta_origem": "1",
-	"numero_conta_destino": "2",
-	"valor": 200,
-	"senha": "123456"
+	"numero_conta_origem": "2",
+	"numero_conta_destino": "1",
+	"valor": 1000,
+	"senha": "12345"
 }
 ```
+![Transferir](https://github.com/ErickAlvDev/API-Banco-Digital-EA/assets/142065333/53dd0148-d0e3-4ee4-ac42-ef7a090921a1)
 
 - GET /contas/saldo?numero_conta=##&senha=### - Consultar saldo da conta bancária
-#### Exemplo de Requisição
-```javascript
-// GET /contas/saldo
-{
-	"numero_conta": "1",
-    "senha": "123456"
-}
-```
+
+![Saldo](https://github.com/ErickAlvDev/API-Banco-Digital-EA/assets/142065333/6849212c-5f8d-4630-806f-8ef8fdffbf20)
 
 - GET /contas/extrato?numero_conta=##&senha=### - Emitir extrato bancário
-#### Exemplo de Requisição
-```javascript
-// GET /contas/extrato
-{
-	"numero_conta": "1",
-    "senha": "123456"
-}
-```
+
+![Extrato](https://github.com/ErickAlvDev/API-Banco-Digital-EA/assets/142065333/f52f0ad3-b604-49c7-9559-92512d633dde)
 
 ## :technologist: Contribuidores
 
