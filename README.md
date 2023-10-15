@@ -76,7 +76,23 @@ npm run dev
 ## :sassy_man: Endpoints
 
 - GET /contas?senha_banco=Cubos123Bank - Listar contas bancárias
+#### Estrutura do objeto de uma conta Bancaria
 
+```javascript
+[
+    {
+        "numero": "1",
+        "saldo": 0,
+        "usuario": {
+            "nome": "Foo Bar",
+            "cpf": "00011122233",
+            "data_nascimento": "2021-03-15",
+            "telefone": "71999998888",
+            "email": "foo@bar.com",
+            "senha": "1234"
+        }
+    }
+]
   
 - POST /contas - Criar conta bancária
   #### Exemplo de Requisição
@@ -165,12 +181,12 @@ npm run dev
 
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/ErickAlvDev"><img src="https://avatars.githubusercontent.com/u/20779100?v=4" width="50px;" alt=""/><br /><sub><b>Jess</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/ErickAlvDev"><img src="https://github.com/ErickAlvDev/API-Banco-Digital-EA/assets/142065333/aabfa87a-e80d-4293-ad4e-e1bf9be38b80" width="50px;" alt=""/><br /><sub><b>Erick Alvarado</b></sub></a><br /></td>
   </tr>
 </table>
 
 ### Autor
 
 <a href="https://github.com/ErickAlvDev">
-<img src="https://avatars.githubusercontent.com/u/20779100?v=4" width="70px" />
+<img src="https://github.com/ErickAlvDev/API-Banco-Digital-EA/assets/142065333/aabfa87a-e80d-4293-ad4e-e1bf9be38b80" width="70px" />
 </a>
